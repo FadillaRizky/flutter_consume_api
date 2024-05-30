@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import '../controller/controller.dart';
@@ -42,7 +41,7 @@ class Home extends StatelessWidget {
                           verticalOffset: 44.0,
                         child: FadeInAnimation(
                           child: ListTile(
-                            title: Text(item.firstName!),
+                            title: Text("${item.firstName} ${item.lastName}"),
                             leading: CircleAvatar(
                               backgroundImage: NetworkImage(item.avatar!),
                             ),

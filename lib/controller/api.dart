@@ -12,7 +12,6 @@ class Api{
     if (response.statusCode == 200) {
       return ListUserResponse.fromJson(jsonDecode(response.body));
     }
-    //jika tidak,muncul pesan error
     throw "Gagal request list User:\n${response.body}";
   }
 }

@@ -16,7 +16,6 @@ class Menu extends StatelessWidget {
     return Obx(() {
       return Scaffold(
           body: Obx(() {
-            // return controller.widgetNav[controller.bottomNavIndex.value];
             switch (controller.bottomNavIndex.value) {
               case 0:
                 return Home();
@@ -29,7 +28,6 @@ class Menu extends StatelessWidget {
             }
           }),
           bottomNavigationBar:
-              //Navigation Bar
               BottomNavigationBar(
             currentIndex: controller.bottomNavIndex.value,
             onTap: (index) {

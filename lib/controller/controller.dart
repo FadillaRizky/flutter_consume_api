@@ -4,9 +4,6 @@ import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import '../model/ListUserResponse.dart';
-import '../view/history.dart';
-import '../view/home.dart';
-import '../view/profile.dart';
 import 'api.dart';
 
 class Controller extends GetxController {
@@ -17,14 +14,6 @@ class Controller extends GetxController {
   var loading = false.obs;
 
   var bottomNavIndex = 0.obs;
-  // var widgetNav = <Widget>[Home(), History(), Profile()].obs;
-  // RxList widgetNav = RxList([Home(), History(), Profile()]);
-  // final List<Widget> widgetNav = [
-  //   Home(),
-  //   History(),
-  //   Profile()
-  // ];
-
   initUser() {
     result.clear();
     loading.value = true;
